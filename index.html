@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<title>TheZZAZZGlitch's April Fools Event 2026</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src='script.js'></script>
+<link rel='stylesheet' href='style.css'>
+
+<script>
+$(document).ready(function(){
+    updateTimers();
+    setInterval(updateTimers, 1000);
+    getSmolLeaderboard();
+    if (localStorage['userToken']) {
+        $("#usr").html("You are currently logged in as <b>" + entities(localStorage.userName) + "</b>. Not you? <a href='account.html'>Go to account management</a>.");
+    }
+});
+</script>
+
+<div id='content'>
+    <div class="box centered">
+        <h1><a href='/' class='headerlink'>TheZZAZZGlitch's April Fools Event 2026</a></h1>
+        <p id='countdown'>-</p>
+        <p id='usr' style='margin:0'>You are not currently logged in. <a href='account.html'>Go to account management</a></p>
+    </div>
+    
+    <div class="box centered pad">
+            <h1>Exploration</h1>
+            <p style='line-height:22px;margin-bottom:16px'>In Glitchtopia, a huge tower shot up from the ground. Can you climb to the very top?</p>
+            <form class='btn-form' action='download.html'><button class='btn'>Go to download page</button></form>
+            <form class='btn-form' action='submit.html'><button class='btn'>Submit completion code</button></form>
+    </div>
+    <div class="box centered pad">
+            <h1>Hacking challenges</h1>
+            <p style='line-height:22px;margin-bottom:16px'>Glitchtopia's Glitch Research Laboratory is looking for volunteers to aid in security testing of their newest inventions.</p>
+            <form class='btn-form' action='hack.html'><button class='btn'>View challenges</button></form>
+    </div>
+    
+    <div class="box centered">
+        <h1>The leaderboard</h1>
+        <div id='leaderboard'>
+            <img src='loading.svg'>
+        </div>
+    </div>
+</div>
+

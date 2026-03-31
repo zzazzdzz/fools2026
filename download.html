@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<title>TheZZAZZGlitch's April Fools Event 2026</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src='script.js'></script>
+<link rel='stylesheet' href='style.css'>
+
+<script>
+$(document).ready(function(){
+    updateTimers();
+    setInterval(updateTimers, 1000);
+    if (localStorage['userToken']) {
+        $("#box_y").show();
+	} else {
+		$("#box_n").show();
+    }
+});
+</script>
+
+<div id='content'>
+    <div class="box centered">
+        <h1><a href='/' class='headerlink'>TheZZAZZGlitch's April Fools Event 2026</a></h1>
+        <p id='countdown'>-</p>
+    </div>
+    
+    <div class="box centered" id="box_n" style="display:none">
+        <h1>Download</h1>
+        <p id='usr'><b>You are not logged in</b>.<br>
+        Please <a href='account.html'>log in or register</a> first to personalize your experience.</p>
+        <div style='margin:15px'>
+			<button class='btn' onclick='window.location="index.html"' id='btn_c'>Back to leaderboard</button>
+		</div>
+    </div>
+	
+    <div class="box centered" id="box_y" style="display:none">
+        <h1>Download</h1>
+        <p id='usr'>Download the patch and apply it to a clean <i>Pokémon Mystery Dungeon: Red Rescue Team</i> ROM (SHA1:&nbsp;9f4cfc5b5f4859d17169a485462e977c7aac2b89) to begin your adventure!</p>
+        <div style='margin:15px'>
+			<button class='btn' onclick='window.location=API_URL+"download.php?w="+localStorage.romToken' id='btn_c'>Download IPS patch</button>
+		</div>
+        <p><a href='index.html'>Go back to the leaderboard</a></p>
+    </div>
+	
+	<div class="box centered">
+        <h1>Balance changes</h1>
+        <p>Several changes to moves, items and game mechanics have been implemented for a more pleasant experience. Below is a detailed list of all changes. If you're an experienced player, it is recommended that you familiarize yourself with the changelog, to avoid surprises and prepare new strategies.</p>
+    
+        <div style='margin:15px'>
+		<table>
+			<tr>
+				<td style='font-weight:bold;width:200px;padding:8px'>Snatch Orb<br>Identify Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Removed from the game.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold;padding:8px'>One-Shot Orb<br>Two-Edge Orb</td>
+				<td style='text-align:left'><ul>
+					<li>The effects now have 100% base accuracy.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Possess Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Unused item, reintroduced to the game.</li>
+					<li>A held item which allows the leader to survive KO by possessing a nearby Pokémon.</li>
+					<li>Now able to possess enemies.</li>
+					<li>Buy price increased to 2000, sale price increased to 800.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Hurl Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Collisions now deal 60 fixed damage instead of 5.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Fill-In Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Works on all secondary terrain (not just water and magma).</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Rebound Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Now applies <i>Counter</i> instead of <i>Mini-Counter</i>.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Silence Orb</td>
+				<td style='text-align:left'><ul>
+					<li><i>Muzzled</i> status reworked to <i>Silenced</i>.</li>
+					<li>A silenced enemy is unable to use <u>any</u> moves, including regular attacks.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Gambler Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Newly added item.</li>
+					<li>Upon usage, the contents of the leader's Toolbox are randomized.</li>
+					<li>Ignores floor enchantment effects, whatever that could mean.</li>
+					<li>90% of gamblers quit before they win big.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Evolve Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Newly added item.</li>
+					<li>Causes the leader to evolve upon entering the next floor, as long as level requirements are met.</li>
+					<li>Skitty evolves at level 20. No item is required.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Blessed Orb</td>
+				<td style='text-align:left'><ul>
+					<li>Newly added item.</li>
+					<li>Removes all negative enchantments on next floor and replaces them with positive enchantments, whatever that could mean.</li>
+				</ul></td>
+			</tr>
+			
+			<tr>
+				<td style='font-weight:bold'>Sonicboom</td>
+				<td style='text-align:left'><ul>
+					<li>Fixed damage reduced from 55 to 30.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Vacuum-Cut</td>
+				<td style='text-align:left'><ul>
+					<li>Now deals base damage equal to user's level.</li>
+					<li>Base PP raised to 10.</li>
+					<li>Vacuum-Cut TMs can be found in dungeons and learned by any Pokémon.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Excavate</td>
+				<td style='text-align:left'><ul>
+					<li>Unused move, reintroduced to the game.</li>
+					<li>Digs the wall in front of the user.</li>
+					<li>Excavate TMs can be found in dungeons and learned by any Pokémon.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Spin Slash</td>
+				<td style='text-align:left'><ul>
+					<li>Unused move, reintroduced to the game.</li>
+					<li>Deals typeless damage in a one-tile radius around the user.</li>
+					<li>Spin Slash TMs can be found in dungeons and learned by any Pokémon.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Pitfall Trap</td>
+				<td style='text-align:left'><ul>
+					<li>Now drops the leader to the previous floor instead of the next floor.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Ginseng</td>
+				<td style='text-align:left'><ul>
+					<li>Each instance of Ginseng usage increases the move's base power by 6 (previously 1).</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Joy Ribbon</td>
+				<td style='text-align:left'><ul>
+					<li>Grants experience equal to 15 times the damage received (previously 1x).</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Heal Ribbon</td>
+				<td style='text-align:left'><ul>
+					<li>Now heals additional 1 HP per turn in addition to other effects.</li>
+					<li>Ignores floor enchantment effects, whatever that could mean.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Serene Ribbon</td>
+				<td style='text-align:left'><ul>
+					<li>Newly added item.</li>
+					<li>Prevents floor enchantments from affecting the player, whatever that could mean.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Warp Scarf</td>
+				<td style='text-align:left'><ul>
+					<li>Holding the item causes the leader's Belly to empty twice as fast, similar to <i>Munch Belt</i>.</li>
+					<li>Effects unchanged when held by other Pokémon.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Pure Seed</td>
+				<td style='text-align:left'><ul>
+					<li>Newly added item.</li>
+					<li>Warps Pokémon directly to stairway.</li>
+					<li>If the stairway is locked, using a <i>Pure Seed</i> unlocks it - whatever that could mean.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Reviver Seed</td>
+				<td style='text-align:left'><ul>
+					<li>Buy price increased to 2000, sale price increased to 800.</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Life Seed</td>
+				<td style='text-align:left'><ul>
+					<li>Now grants +5 max HP (was 3).</li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td style='font-weight:bold'>Sitrus Berry</td>
+				<td style='text-align:left'><ul>
+					<li>Now grants +3 max HP (was 2).</li>
+				</ul></td>
+			</tr>
+			
+			
+			<tr>
+				<td style='font-weight:bold'>System changes</td>
+				<td style='text-align:left'><ul>
+                    <li>Items and money are not lost upon defeat.</li>
+					<li>Quicksaving is not available - instead, progress is saved automatically at floors 11, 21, 31, 51, 71 and 100.</li>
+					<li>Certain items (Apple, Max Elixer) are guaranteed to appear on certain floors.</li>
+					<li>Experience formula was changed to account for shorter playtime.</li>
+					<li>All Pokémon now yield a minimum of 40 base Experience.</li>
+					<li>Sticky throwables no longer spawn on dungeon floors.</li>
+					<li>Several new mechanics have been added. It's a secret. Go play the game!</li>
+				</ul></td>
+			</tr>
+			
+		</table>
+		</div>
+	</div>
+</div>
+

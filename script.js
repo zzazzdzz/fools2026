@@ -1,5 +1,11 @@
 API_URL = 'https://fools2026.cloud/';
 
+if (localStorage['foolsEdition'] != 2026) {
+	localStorage['userToken'] = '';
+	localStorage['userName'] = '';
+	localStorage['foolsEdition'] = 2026;
+}
+
 ACHIEVEMENTS = [
 	// 100*10+ 40+40+40+40+40+50+50 +10+17+10
     [

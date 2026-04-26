@@ -10,4 +10,4 @@ Despite those changes, we still feel like there is some sort of weakness here. C
 
 # Hacking Challenge III - Ultra secure vault
 
-You know the deal by now. Here's a Pokémon Blue save file (`c3.sav`). Can you find the correct password? Once you do, submit it as a completion code. Good luck!
+You know the deal by now. Here's a PokÃ©mon Blue save file (`c3.sav`). Can you find the correct password? Once you do, submit it as a completion code. Good luck!

@@ -1,0 +1,47 @@
+int passwd[10];
+
+int div(int a, int b) {
+    int ct = 0;
+    while (a > 0) {
+        a -= b;
+        ct++;
+    }
+    return ct;
+}
+
+void main() {
+    if (passwd[0] != 129) {
+        __out 0; // B
+    }
+    if ((passwd[1]+passwd[2]) != 339 || (passwd[1]-passwd[2]) != -11) {
+        __out 0; // ep
+    }
+    if (passwd[3] != (passwd[2]-39)) {
+        __out 0; // I
+    }
+    if (passwd[4] > 146 || passwd[4] < 146) {
+        __out 0; // S
+    }
+    passwd[5] -= 159;
+    passwd[6] -= 159;
+    passwd[7] -= 159;
+    passwd[8] -= 159;
+    passwd[9] -= 159;
+
+    if (div(passwd[1],19) != passwd[5]) {
+        __out 0; // i
+    }
+    if (div(passwd[0],11) != passwd[6]) {
+        __out 0; // l
+    }
+    if (div(passwd[2],15) != passwd[7]) {
+        __out 0; // l
+    }
+    if (div(passwd[4],10) != passwd[8]) {
+        __out 0; // o
+    }
+    if (div(passwd[1],12) != passwd[9]) {
+        __out 0; // n
+    }
+    __out 1;
+}

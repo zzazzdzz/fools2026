@@ -1,10 +1,14 @@
 # fools2026 source code archive
 
-This is the source for [TheZZAZZGlitch's April Fools Event 2026](https://zzazzdzz.github.io/fools2026/). If you just want to play the ROM hack, you don't need to build it from source. Visit the event site (linked above) for more information.
+This is the source for [TheZZAZZGlitch's April Fools Event 2026](https://zzazzdzz.github.io/fools2026/).
+
+If you just want to play the ROM hack, you don't need to build it from source. Visit the event site (linked above) for more information.
+
+The code sucks, I know. At least all of it was written without clanker assistance.
 
 ## Build instructions
 
-Clone the [pret/pmd-red](https://github.com/pret/pmd-red) repository, then make it your current directory. Check out the correct version, then apply the patch from the *fools2026.patch* file.
+Clone the [pret/pmd-red](https://github.com/pret/pmd-red) repository, then **make it your current directory**. Check out the correct version, then apply the patch from the *fools2026.patch* file.
 
 ```
 git checkout -f 
@@ -17,4 +21,4 @@ Next, generate the combined dungeon data and user preference file (very fittingl
 python3 mk_data.py
 ```
 
-Afterwards, you may build the ROM according [to the instructions](https://github.com/pret/pmd-red/blob/master/INSTALL.md).
+Afterwards, you may build the ROM according [to the instructions in the original repository](https://github.com/pret/pmd-red/blob/master/INSTALL.md).

@@ -11,7 +11,7 @@ The code sucks, I know. At least all of it was written without clanker assistanc
 Clone the [pret/pmd-red](https://github.com/pret/pmd-red) repository, then **make it your current directory**. Check out the correct version, then apply the patch from the *fools2026.patch* file.
 
 ```
-git checkout -f 
+git checkout -f 6d8ff1950bbe88555152e9684171344ce83e7e41
 patch -p0 < fools2026.patch
 ```
 

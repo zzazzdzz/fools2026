@@ -10,4 +10,4 @@ rgblink -n fools.sym -O base.sav -o fools.sav -x main.o
 python3 savfix.py
 ```
 
-The file *mem.bin* was generated from *mem.hsq* using (http://mazonka.com/subleq/)[Oleg Mazonka's Higher Subleq Compiler].
+The file *mem.bin* was generated from *mem.hsq* using [http://mazonka.com/subleq/](Oleg Mazonka's Higher Subleq Compiler).

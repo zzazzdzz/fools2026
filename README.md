@@ -1,4 +1,4 @@
-# fools2024
+# fools2026
 TheZZAZZGlitch's April Fools Event 2026 - here you can find:
 
 - The [event website](https://zzazzdzz.github.io/fools2026), which you should consult for further information.

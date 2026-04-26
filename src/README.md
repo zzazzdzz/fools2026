@@ -15,7 +15,7 @@ git checkout -f 6d8ff1950bbe88555152e9684171344ce83e7e41
 patch -p0 < fools2026.patch
 ```
 
-Next, generate the combined dungeon data and user preference file (very fittingly named *titlegfx.bin*) using the included Python script. You'll need Python 3 to run it, with *xlrd* package installed. If you'd like to customize player data, such as the player name and Pokémon species, you can make appropriate changes within this very clean and easy to read script (it sucks). If you'd like to customize dungeon data, edit the provided *dungeon_data.xls* spreadsheet.
+Next, generate the combined dungeon data and user preference file (very fittingly named *titlegfx.bin*) using the included Python script. You'll need Python 3 to run it, with *xlrd* package installed. If you'd like to customize player data, such as the player name and PokÃ©mon species, you can make appropriate changes within this very clean and easy to read script (it sucks). If you'd like to customize dungeon data, edit the provided *dungeon_data.xls* spreadsheet.
 
 ```
 python3 mk_data.py

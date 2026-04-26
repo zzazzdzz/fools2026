@@ -3,18 +3,13 @@
 <title>TheZZAZZGlitch's April Fools Event 2026</title>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-<script src='script.js'></script>
+<script src='script.js?69420'></script>
 <link rel='stylesheet' href='style.css'>
 
 <script>
 $(document).ready(function(){
     updateTimers();
     setInterval(updateTimers, 1000);
-    if (localStorage['userToken']) {
-        $("#box_y").show();
-	} else {
-		$("#box_n").show();
-    }
 });
 </script>
 
@@ -24,20 +19,15 @@ $(document).ready(function(){
         <p id='countdown'>-</p>
     </div>
     
-    <div class="box centered" id="box_n" style="display:none">
-        <h1>Download</h1>
-        <p id='usr'><b>You are not logged in</b>.<br>
-        Please <a href='account.html'>log in or register</a> first to personalize your experience.</p>
-        <div style='margin:15px'>
-			<button class='btn' onclick='window.location="index.html"' id='btn_c'>Back to leaderboard</button>
-		</div>
-    </div>
-	
-    <div class="box centered" id="box_y" style="display:none">
+    <div class="box centered">
         <h1>Download</h1>
         <p id='usr'>Download the patch and apply it to a clean <i>Pokémon Mystery Dungeon: Red Rescue Team</i> ROM (SHA1:&nbsp;9f4cfc5b5f4859d17169a485462e977c7aac2b89) to begin your adventure!</p>
+		<p>Pick the Pokémon of your choice to download the appropriate patch. Each one has their own strengths and weaknesses, so choose wisely!</p>
         <div style='margin:15px'>
-			<button class='btn' onclick='window.location=API_URL+"download.php?w="+localStorage.romToken' id='btn_c'>Download IPS patch</button>
+			<button class='btn' onclick='window.location="patches/fools2026-charmander.ips"' id='btn_c'>Charmander</button>
+			<button class='btn' onclick='window.location="patches/fools2026-totodile.ips"' id='btn_c'>Totodile</button>
+			<button class='btn' onclick='window.location="patches/fools2026-treecko.ips"' id='btn_c'>Treecko</button>
+			<button class='btn' onclick='window.location="patches/fools2026-skitty.ips"' id='btn_c'>Skitty</button>
 		</div>
         <p><a href='index.html'>Go back to the leaderboard</a></p>
     </div>

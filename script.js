@@ -1,4 +1,4 @@
-API_URL = 'https://fools2026.cloud/';
+API_URL = '';
 
 if (localStorage['foolsEdition'] != 2026) {
 	localStorage['userToken'] = '';
@@ -78,7 +78,7 @@ function updateTimers(){
 }
 
 function apiHit(data, fsucc, ffail) {
-    $.post(API_URL + "api.php", {"d": JSON.stringify(data)}).done(fsucc).fail(ffail);
+    $.get("leaderboard.json", {"d": JSON.stringify(data)}).done(fsucc).fail(ffail);
 }
 
 function entities(s){
